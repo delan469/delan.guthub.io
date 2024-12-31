@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=M+PLUS+Rounded+1c&display=swap');
+
+/* Reset */
+
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+
+/* 基本設定 */
+
+	body,input,select,textarea{
+	font-family: 'Electrolize','M PLUS Rounded 1c', sans-serif;
+	color: #141;
+	
+	line-height: 1.75em;
+	font-size: medium;
+	font-weight: 400;
+	}
+
+	body {
+		line-height: 1;
+	}
+		h1, h2, h3, h4, h5, h6 {
+		color: #787878;
+		font-weight: 400;
+		margin: 0 0 1em 0;
+	}
+
+			h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		h1 {
+		font-size: 2em;
+		line-height: 1.5em;
+		}
+
+		h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		}
+
+		h3 {
+		font-size: 1.25em;
+		line-height: 1.5em;
+		}
+
+		h4 {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		}
+
+		h5 {
+		font-size: 0.9em;
+		line-height: 1.5em;
+		}
+
+		h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+		}
+
+
+	hr{
+	margin-top: 60px;
+	border: 1px solid #ddd;
+	}
+	
+	a{
+		text-decoration:none;
+	}
+		a:hover{
+			text-decoration: underline;
+		}
+
+/* Table */
+
+	table,tr,td{
+	border: 2px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+	table tbody tr:nth-child(2n + 1) {
+	background-color: #efefef;
+	}
+
+	table td {
+	padding: 0.7em 0.7em;
+	}
+
+	div table{
+	margin: 0 0 2em 0;
+	width: 100%;
+	}
+
+/* List */
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+			padding-bottom: 1em;
+			margin: 0 0 1em 0;
+			
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2em 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+			padding-bottom: 0.75em;
+			margin: 0 0 2em 0;
+			
+		}
+		
+		td li{
+			padding: 0 0 0.2em 0.1em;
+		}
+
+
+/*form*/
+	form{
+		margin: 0 0 2em 0;
+	}
+	
+		
+		
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea{
+		border-radius: 0.35em;
+		border: solid 2px transparent;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 0.75em;
+		text-decoration: none;
+		width: 100%;
+	}
+	
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #141;
+		}
+		
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		select {
+			height: 2.75em;
+		}
+
+		textarea {
+			padding: 0.75em;
+		}
+		
+		
+/* 右側版面分配 */		
+
+	.row{
+			padding: 10px;						
+		}
+		
+		.au{
+			padding:20px;
+			margin: 10px;
+			float:left;					
+		}
+		
+			.uniform{					
+					width:400px;
+					margin: 10px;					
+			}
+			
+			.uniform > div{
+				margin: 20px;
+			}
+			
+			.uniform > div:last-child{
+				text-align: right;
+				margin: 0px;
+			}
+		
+		
+		.bu{
+			float:left;
+			padding:3em 0 0 4em;
+			margin: 10px;			
+		}
+		
+/* iframe */	
+
+		.mpifr{
+			margin: 0 0 0 8em;
+			width: 600px;
+			height: 300px;
+			border: none;
+		}
+		
+			
+			
+/*基本版面*/
+
+	#flset{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	}
+
+
+	header.xyz{	
+	text-align:right;
+	background-image:url("images/a-001.jpg");
+	background-size:50% auto;
+	background-attachment:fixed;
+	width:20%;
+	}
+	
+
+
+	#flset > div{
+	width:80%;
+	height:100%;
+	background: linear-gradient(to bottom,rgb(241, 230, 130),#eee);	
+	}
+
+	.aba{
+	padding: 6em 2em 0 0;
+	}
+
+	.abb{
+	padding: 4em 3em 0 3em;
+	}
+
+/* 圓形圖 */
+	img[src*="ox"]{
+	width:100px;
+	border-radius: 3em;
+	margin: 20px 0px;
+	}
+	
+	
+/* Button */
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"]{
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		
+		background-color: transparent;
+		border-radius: 0.35em;
+		border: solid 3px #fff;
+		color: #787878 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 400;
+		height: 3.15em;
+		line-height: 2.75em;
+		min-width: 10em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover{
+			border-color: #141;
+			color: #141 !important;
+			background-color: #ddd;
+		}
